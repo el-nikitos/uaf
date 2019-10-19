@@ -1,6 +1,36 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# elements_5559ИН10_28(UART-RS485)
+#
+DEF elements_5559ИН10_28(UART-RS485) DD 0 40 Y Y 1 F N
+F0 "DD" 350 550 60 H V C CNN
+F1 "elements_5559ИН10_28(UART-RS485)" 50 -500 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+T 0 0 350 60 0 0 0 RXT Normal 0 C C
+S -300 -450 -550 450 0 0 0 N
+S 300 450 -300 -450 0 0 0 N
+S 550 -450 300 -100 0 0 0 N
+S 550 -100 300 250 0 0 0 N
+S 550 250 300 450 0 0 0 N
+P 2 0 0 0 320 150 330 160 N
+P 2 0 0 0 400 150 390 140 N
+P 4 0 0 0 360 180 390 220 330 220 360 180 N
+P 4 0 0 0 360 360 390 400 330 400 360 360 N
+P 4 0 0 0 390 160 400 150 320 150 330 140 N
+X RO 1 750 350 200 L 50 50 1 1 I
+X nRE 2 -750 150 200 R 50 50 1 1 I
+X DE 3 -750 0 200 R 50 50 1 1 I
+X DI 4 -750 -150 200 R 50 50 1 1 I
+X GND 5 750 -200 200 L 50 50 1 1 I X
+X AY 6 750 150 200 L 50 50 1 1 I
+X BZ 7 750 0 200 L 50 50 1 1 I
+X Ucc 8 750 -350 200 L 50 50 1 1 I X
+ENDDRAW
+ENDDEF
+#
 # elements_ATmega8A-AU
 #
 DEF elements_ATmega8A-AU DD 0 40 Y Y 1 F N
@@ -45,6 +75,46 @@ X PD5(T1) 9 -100 -800 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# elements_Вилка_PLD6_ПРОГ
+#
+DEF elements_Вилка_PLD6_ПРОГ XP 0 40 Y Y 1 F N
+F0 "XP" 0 350 60 H V C CNN
+F1 "elements_Вилка_PLD6_ПРОГ" 0 -350 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -250 250 250 -250 0 1 0 N
+P 2 0 1 0 0 100 -50 50 N
+P 2 0 1 0 0 100 0 -150 N
+P 2 0 1 0 0 100 50 50 N
+X MISO 1 -450 150 200 R 50 50 1 1 I
+X VCC 2 450 150 200 L 50 50 1 1 I
+X SCK 3 -450 0 200 R 50 50 1 1 I
+X MOSI 4 450 0 200 L 50 50 1 1 I
+X RST 5 -450 -150 200 R 50 50 1 1 I
+X GND 6 450 -150 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_Диод_шоттки
+#
+DEF elements_Диод_шоттки VD 0 40 Y Y 1 F N
+F0 "VD" 175 125 50 H V C CNN
+F1 "elements_Диод_шоттки" 175 -125 50 H V C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+P 2 0 1 0 50 0 200 0 N
+P 2 0 1 0 175 -75 150 -75 N
+P 2 0 1 0 175 -75 175 0 N
+P 2 0 1 0 200 0 250 0 N
+P 3 0 1 0 175 0 175 75 200 75 N
+P 4 0 1 0 125 50 125 -50 175 0 125 50 N
+X ~ 1 0 0 50 R 50 50 1 1 I
+X ~ 2 300 0 50 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # elements_Клеммник_х2
 #
 DEF elements_Клеммник_х2 XТ 0 40 Y Y 1 F N
@@ -59,7 +129,7 @@ C 0 0 10 0 0 0 N
 T 0 -500 50 50 0 0 0 1 Normal 0 C C
 T 0 -500 -100 50 0 0 0 2 Normal 0 C C
 T 0 -500 175 50 0 0 0 Конт. Normal 0 C C
-T 0 -250 200 50 0 0 0 Цепь Normal 0 C C
+T 0 -200 200 50 0 0 0 Цепь Normal 0 C C
 S -600 100 -400 300 0 0 0 N
 S -400 300 0 100 0 0 0 N
 S -400 -200 -600 -50 0 1 0 N
@@ -74,6 +144,138 @@ P 2 0 0 0 0 -50 0 -10 N
 P 2 0 0 0 0 10 0 100 N
 X ~ 1 0 0 0 L 50 50 1 1 B N
 X ~ 2 0 -150 0 L 50 50 1 1 B N
+ENDDRAW
+ENDDEF
+#
+# elements_Конденсатор_керамический
+#
+DEF elements_Конденсатор_керамический C 0 40 Y Y 1 F N
+F0 "C" 0 150 60 H V C CNN
+F1 "elements_Конденсатор_керамический" 100 -100 60 H I C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+F4 "10 мкФ/6,3 В" 0 0 50 H V C CNN "Номинал"
+F5 "С111" 0 0 50 H I C CNN "УГО"
+DRAW
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 50 50 50 -50 N
+X ~ 1 -50 0 50 R 50 50 1 1 I
+X ~ 2 100 0 50 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_Предохранитель
+#
+DEF elements_Предохранитель FU 0 40 Y Y 1 F N
+F0 "FU" -25 150 60 H V C CNN
+F1 "elements_Предохранитель" 0 -150 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -200 75 200 -75 0 1 0 N
+P 2 0 1 0 -200 0 200 0 N
+X ~ 1 -400 0 200 R 50 50 1 1 I
+X ~ 2 400 0 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_Резистор_0,065Вт
+#
+DEF elements_Резистор_0,065Вт R 0 40 Y Y 1 F N
+F0 "R" -25 150 60 H V C CNN
+F1 "elements_Резистор_0,065Вт" 0 -150 60 H I C CNN
+F2 "N_RLC:Резистор_SMD_0603_0,065_Вт" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+F4 "R101" 0 0 50 H I C CNN "УГО"
+F5 "100 Ом" 0 0 50 H V C CNN "Номинал"
+DRAW
+S -200 75 200 -75 0 1 0 N
+P 2 0 1 0 0 50 -100 -50 N
+P 2 0 1 0 50 50 -50 -50 N
+P 2 0 1 0 100 50 0 -50 N
+X ~ 1 -300 0 100 R 50 50 1 1 I
+X ~ 2 300 0 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_Светодиод
+#
+DEF elements_Светодиод HL 0 40 Y Y 1 F N
+F0 "HL" 150 160 60 H V C CNN
+F1 "elements_Светодиод" 170 -160 60 H V C CNN
+F2 "" 300 -500 60 H I C CNN
+F3 "" 300 -500 60 H I C CNN
+DRAW
+C 150 0 100 0 1 0 N
+P 2 0 1 0 100 0 200 0 N
+P 2 0 1 0 175 50 175 -50 N
+P 2 0 1 0 250 125 225 125 N
+P 2 0 1 0 265 80 290 105 N
+P 2 0 1 0 290 80 290 105 N
+P 2 0 1 0 290 105 265 105 N
+P 3 0 1 0 225 100 250 125 250 100 N
+P 4 0 1 0 125 50 125 -50 175 0 125 50 N
+X ~ 1 0 0 50 R 50 50 1 1 I
+X ~ 2 300 0 50 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_Транзистор_полевой_N-IRLML6344TR
+#
+DEF elements_Транзистор_полевой_N-IRLML6344TR VT 0 40 Y Y 1 F N
+F0 "VT" 125 500 60 H V C CNN
+F1 "elements_Транзистор_полевой_N-IRLML6344TR" 100 -200 60 H V C CNN
+F2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+C 150 150 270 0 1 0 N
+P 2 0 1 0 0 0 -50 0 N
+P 2 0 1 0 0 300 0 0 N
+P 2 0 1 0 100 -50 100 50 N
+P 2 0 1 0 100 100 100 200 N
+P 2 0 1 0 100 150 150 125 N
+P 2 0 1 0 100 150 150 175 N
+P 2 0 1 0 100 150 350 150 N
+P 2 0 1 0 100 250 100 350 N
+P 2 0 1 0 350 0 100 0 N
+P 2 0 1 0 350 150 350 0 N
+P 2 0 1 0 350 300 100 300 N
+P 2 0 1 0 450 150 550 150 N
+P 2 0 1 0 500 0 500 300 N
+P 4 0 1 0 450 100 500 150 550 100 450 100 N
+X ~ 1 -250 0 200 R 50 50 1 1 I
+X ~ 2 550 0 200 L 50 50 1 1 I
+X ~ 3 550 300 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_стабилизатор_нерегулируемый_LM1117GS-5.0
+#
+DEF elements_стабилизатор_нерегулируемый_LM1117GS-5.0 G 0 40 Y Y 1 F N
+F0 "G" 600 150 50 H V C CNN
+F1 "elements_стабилизатор_нерегулируемый_LM1117GS-5.0" 1000 -350 50 H V C CNN
+F2 "N_VD_HL:Транзистор_NPN_SOT223" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 700 -250 0 100 0 1 0 N
+X GND 1 350 -300 50 U 50 50 1 1 P
+X 5В 2 750 0 50 L 50 50 1 1 O
+X 6...30_В 3 -50 0 50 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# elements_стабилизатор_нерегулируемый_XC6206P302MR
+#
+DEF elements_стабилизатор_нерегулируемый_XC6206P302MR G 0 40 Y Y 1 F N
+F0 "G" 600 150 50 H V C CNN
+F1 "elements_стабилизатор_нерегулируемый_XC6206P302MR" 1000 -350 50 H V C CNN
+F2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 700 -250 0 100 0 1 0 N
+X GND 1 350 -300 50 U 50 50 1 1 P
+X 3В 2 750 0 50 L 50 50 1 1 O
+X 3,2...6_В 3 -50 0 50 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
