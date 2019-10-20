@@ -58,47 +58,47 @@ PWR_GND
 $Comp
 L elements:Клеммник_х2 X3
 U 1 1 5DAC06C7
-P 9500 3100
-F 0 "X3" H 9000 3450 60  0000 C CNN
-F 1 "Клеммник_х2" H 9450 2725 60  0001 C CNN
-F 2 "N_X:Клеммник_х2_шаг5" H 9500 3100 60  0001 C CNN
-F 3 "" H 9500 3100 60  0001 C CNN
-	1    9500 3100
+P 10000 3100
+F 0 "X3" H 9500 3450 60  0000 C CNN
+F 1 "Клеммник_х2" H 9950 2725 60  0001 C CNN
+F 2 "N_X:Клеммник_х2_шаг5" H 10000 3100 60  0001 C CNN
+F 3 "" H 10000 3100 60  0001 C CNN
+	1    10000 3100
 	-1   0    0    -1  
 $EndComp
-Text Label 9500 3100 0    50   ~ 0
+Text Label 10000 3100 0    50   ~ 0
 DO_1
-Text Label 9500 3250 0    50   ~ 0
+Text Label 10000 3250 0    50   ~ 0
 DO_2
 $Comp
 L elements:Клеммник_х2 X4
 U 1 1 5DAC910B
-P 9500 4000
-F 0 "X4" H 9000 4350 60  0000 C CNN
-F 1 "Клеммник_х2" H 9450 3625 60  0001 C CNN
-F 2 "N_X:Клеммник_х2_шаг5" H 9500 4000 60  0001 C CNN
-F 3 "" H 9500 4000 60  0001 C CNN
-	1    9500 4000
+P 10000 4000
+F 0 "X4" H 9500 4350 60  0000 C CNN
+F 1 "Клеммник_х2" H 9950 3625 60  0001 C CNN
+F 2 "N_X:Клеммник_х2_шаг5" H 10000 4000 60  0001 C CNN
+F 3 "" H 10000 4000 60  0001 C CNN
+	1    10000 4000
 	-1   0    0    -1  
 $EndComp
-Text Label 9500 4000 0    50   ~ 0
+Text Label 10000 4000 0    50   ~ 0
 DI_1
-Text Label 9500 4150 0    50   ~ 0
+Text Label 10000 4150 0    50   ~ 0
 DI_2
 $Comp
 L elements:Клеммник_х2 X5
 U 1 1 5DACA5D7
-P 9500 5100
-F 0 "X5" H 9000 5450 60  0000 C CNN
-F 1 "Клеммник_х2" H 9450 4725 60  0001 C CNN
-F 2 "N_X:Клеммник_х2_шаг5" H 9500 5100 60  0001 C CNN
-F 3 "" H 9500 5100 60  0001 C CNN
-	1    9500 5100
+P 10000 5100
+F 0 "X5" H 9500 5450 60  0000 C CNN
+F 1 "Клеммник_х2" H 9950 4725 60  0001 C CNN
+F 2 "N_X:Клеммник_х2_шаг5" H 10000 5100 60  0001 C CNN
+F 3 "" H 10000 5100 60  0001 C CNN
+	1    10000 5100
 	-1   0    0    -1  
 $EndComp
-Text Label 9500 5100 0    50   ~ 0
+Text Label 10000 5100 0    50   ~ 0
 AI_1
-Text Label 9500 5250 0    50   ~ 0
+Text Label 10000 5250 0    50   ~ 0
 AI_2
 $Comp
 L elements:5559ИН10_28(UART-RS485) DD2
@@ -407,7 +407,7 @@ Wire Wire Line
 Connection ~ 5150 1500
 Text Label 5250 1500 0    50   ~ 0
 GND
-Text Label 6000 2800 0    50   ~ 0
+Text Label 6750 2800 0    50   ~ 0
 3V
 Text Label 5800 2600 0    50   ~ 0
 5V
@@ -421,26 +421,24 @@ Text Label 3250 2800 2    50   ~ 0
 5V
 Text Label 3250 3000 2    50   ~ 0
 5V
-Wire Wire Line
-	5550 2800 6500 2800
 $Comp
 L elements:Конденсатор_керамический C8
 U 1 1 5DAE7890
-P 6500 3050
-F 0 "C8" V 6450 3250 60  0000 R CNN
-F 1 "Конденсатор_керамический" H 6600 2950 60  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_0603" H 6500 3050 60  0001 C CNN
-F 3 "" H 6500 3050 60  0001 C CNN
-F 4 "1 мкФ/6,3 В" V 6550 3650 50  0000 R CNN "Номинал"
-F 5 "С111" H 6500 3050 50  0001 C CNN "УГО"
-	1    6500 3050
+P 6750 3050
+F 0 "C8" V 6700 3250 60  0000 R CNN
+F 1 "Конденсатор_керамический" H 6850 2950 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603" H 6750 3050 60  0001 C CNN
+F 3 "" H 6750 3050 60  0001 C CNN
+F 4 "1 мкФ/6,3 В" V 6800 3650 50  0000 R CNN "Номинал"
+F 5 "С111" H 6750 3050 50  0001 C CNN "УГО"
+	1    6750 3050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6500 2800 6500 3000
+	6750 2800 6750 3000
 Wire Wire Line
-	6500 3150 6500 3250
-Text Label 6500 3250 0    50   ~ 0
+	6750 3150 6750 3250
+Text Label 6750 3250 0    50   ~ 0
 GND
 $Comp
 L elements:Конденсатор_керамический C1
@@ -562,33 +560,33 @@ Wire Wire Line
 Wire Wire Line
 	1000 3000 1750 3000
 $Sheet
-S 8000 3900 1000 650 
+S 8500 3900 1000 650 
 U 5DB51AF8
 F0 "TRANSISTOR_DI" 50
 F1 "TRANSISTOR_DI.sch" 50
-F2 "DI_1_IN" I R 9000 4000 50 
-F3 "GND" I L 8000 4450 50 
-F4 "DI_2_IN" I R 9000 4150 50 
-F5 "DI_2_OUT" I L 8000 4150 50 
-F6 "DI_1_OUT" I L 8000 4000 50 
-F7 "VCC" I L 8000 4300 50 
+F2 "DI_1_IN" I R 9500 4000 50 
+F3 "GND" I L 8500 4450 50 
+F4 "DI_2_IN" I R 9500 4150 50 
+F5 "DI_2_OUT" I L 8500 4150 50 
+F6 "DI_1_OUT" I L 8500 4000 50 
+F7 "VCC" I L 8500 4300 50 
 $EndSheet
 Wire Wire Line
-	9000 4000 9500 4000
+	9500 4000 10000 4000
 Wire Wire Line
-	9000 4150 9500 4150
+	9500 4150 10000 4150
 Wire Wire Line
-	8000 4450 7750 4450
-Text Label 7750 4450 2    50   ~ 0
+	8500 4450 8250 4450
+Text Label 8250 4450 2    50   ~ 0
 GND
 Wire Wire Line
-	8000 4300 7750 4300
-Text Label 7750 4300 2    50   ~ 0
+	8500 4300 8250 4300
+Text Label 8250 4300 2    50   ~ 0
 5V
 Wire Wire Line
-	8000 4150 7750 4150
+	8500 4150 8250 4150
 Wire Wire Line
-	8000 4000 7750 4000
+	8500 4000 8250 4000
 Text Label 6000 3900 0    50   ~ 0
 TX
 Text Label 6000 3800 0    50   ~ 0
@@ -603,13 +601,13 @@ Wire Wire Line
 	5550 4000 6000 4000
 Text Label 6000 4000 0    50   ~ 0
 PD2_INT0
-Text Label 7750 4000 2    50   ~ 0
+Text Label 8250 4000 2    50   ~ 0
 PD2_INT0
 Text Label 3000 2500 2    50   ~ 0
 PD3_INT1
 Wire Wire Line
 	3000 2500 3500 2500
-Text Label 7750 4150 2    50   ~ 0
+Text Label 8250 4150 2    50   ~ 0
 PD3_INT1
 Text Label 3000 3700 2    50   ~ 0
 PB1_OC1A
@@ -619,9 +617,9 @@ Text Label 3000 3800 2    50   ~ 0
 PB2_OC1B
 Wire Wire Line
 	3000 3800 3500 3800
-Text Label 7750 3100 2    50   ~ 0
+Text Label 8250 3100 2    50   ~ 0
 PB1_OC1A
-Text Label 7750 3250 2    50   ~ 0
+Text Label 8250 3250 2    50   ~ 0
 PB2_OC1B
 Text Label 6000 3600 0    50   ~ 0
 SCL
@@ -650,24 +648,24 @@ Wire Wire Line
 Wire Wire Line
 	3500 3000 3250 3000
 $Sheet
-S 8000 5000 1000 500 
+S 8500 5000 1000 500 
 U 5DBE4A0C
 F0 "RC-INPUT" 50
 F1 "RC-INPUT.sch" 50
-F2 "AI_1_OUT" I L 8000 5100 50 
-F3 "AI_1_IN" I R 9000 5100 50 
-F4 "AI_2_OUT" I L 8000 5250 50 
-F5 "AI_2_IN" I R 9000 5250 50 
-F6 "GND" I L 8000 5400 50 
+F2 "AI_1_OUT" I L 8500 5100 50 
+F3 "AI_1_IN" I R 9500 5100 50 
+F4 "AI_2_OUT" I L 8500 5250 50 
+F5 "AI_2_IN" I R 9500 5250 50 
+F6 "GND" I L 8500 5400 50 
 $EndSheet
 Wire Wire Line
-	8000 5400 7750 5400
-Text Label 7750 5400 2    50   ~ 0
+	8500 5400 8250 5400
+Text Label 8250 5400 2    50   ~ 0
 GND
 Wire Wire Line
-	9000 5100 9500 5100
+	9500 5100 10000 5100
 Wire Wire Line
-	9000 5250 9500 5250
+	9500 5250 10000 5250
 Text Label 6000 3200 0    50   ~ 0
 PC1
 Text Label 6000 3100 0    50   ~ 0
@@ -676,14 +674,14 @@ Wire Wire Line
 	5550 3100 6000 3100
 Wire Wire Line
 	5550 3200 6000 3200
-Text Label 7750 5250 2    50   ~ 0
+Text Label 8250 5250 2    50   ~ 0
 PC1
-Text Label 7750 5100 2    50   ~ 0
+Text Label 8250 5100 2    50   ~ 0
 PC0
 Wire Wire Line
-	8000 5250 7750 5250
+	8500 5250 8250 5250
 Wire Wire Line
-	8000 5100 7750 5100
+	8500 5100 8250 5100
 $Comp
 L elements:Клеммник_х2 X6
 U 1 1 5DC1040D
@@ -757,32 +755,32 @@ Wire Wire Line
 	2000 1750 1750 1750
 Connection ~ 1750 1750
 $Sheet
-S 8000 3000 1000 500 
+S 8500 3000 1000 500 
 U 5DC52DBF
 F0 "N-CANEL_DO" 50
 F1 "N-CANEL_DO.sch" 50
-F2 "DO_1_OUT" I R 9000 3100 50 
-F3 "DO_1_IN" I L 8000 3100 50 
-F4 "SIGNAL_GND" I L 8000 3400 50 
-F5 "PWR_GND" I R 9000 3400 50 
-F6 "DO_2_OUT" I R 9000 3250 50 
-F7 "DO_2_IN" I L 8000 3250 50 
+F2 "DO_1_OUT" I R 9500 3100 50 
+F3 "DO_1_IN" I L 8500 3100 50 
+F4 "SIGNAL_GND" I L 8500 3400 50 
+F5 "PWR_GND" I R 9500 3400 50 
+F6 "DO_2_OUT" I R 9500 3250 50 
+F7 "DO_2_IN" I L 8500 3250 50 
 $EndSheet
 Wire Wire Line
-	9000 3100 9500 3100
+	9500 3100 10000 3100
 Wire Wire Line
-	9000 3250 9500 3250
+	9500 3250 10000 3250
 Wire Wire Line
-	9000 3400 9250 3400
-Text Label 9250 3400 0    50   ~ 0
+	9500 3400 9750 3400
+Text Label 9750 3400 0    50   ~ 0
 PWR_GND
 Wire Wire Line
-	8000 3250 7750 3250
+	8500 3250 8250 3250
 Wire Wire Line
-	8000 3100 7750 3100
+	8500 3100 8250 3100
 Wire Wire Line
-	8000 3400 7750 3400
-Text Label 7750 3400 2    50   ~ 0
+	8500 3400 8250 3400
+Text Label 8250 3400 2    50   ~ 0
 GND
 $Comp
 L elements:Светодиод HL2
@@ -850,12 +848,8 @@ Wire Wire Line
 	4750 1750 4500 1750
 Text Label 4500 1750 2    50   ~ 0
 5V
-Text Label 3000 2600 2    50   ~ 0
-PD4
-Wire Wire Line
-	3000 2600 3500 2600
-Text Label 4500 4500 2    50   ~ 0
-PD4
+Text Label 6000 3400 0    50   ~ 0
+PC3
 Wire Wire Line
 	5550 3700 5800 3700
 Text Label 3000 3600 2    50   ~ 0
@@ -867,25 +861,25 @@ PB0
 $Comp
 L elements:Клеммник_х2 X8
 U 1 1 5DD0A190
-P 9500 6000
-F 0 "X8" H 9000 6350 60  0000 C CNN
-F 1 "Клеммник_х2" H 9450 5625 60  0001 C CNN
-F 2 "N_X:Клеммник_х2_шаг5" H 9500 6000 60  0001 C CNN
-F 3 "" H 9500 6000 60  0001 C CNN
-	1    9500 6000
+P 10000 6000
+F 0 "X8" H 9500 6350 60  0000 C CNN
+F 1 "Клеммник_х2" H 9950 5625 60  0001 C CNN
+F 2 "N_X:Клеммник_х2_шаг5" H 10000 6000 60  0001 C CNN
+F 3 "" H 10000 6000 60  0001 C CNN
+	1    10000 6000
 	-1   0    0    -1  
 $EndComp
-Text Label 9500 6000 0    50   ~ 0
+Text Label 10000 6000 0    50   ~ 0
 GND
-Text Label 9500 6150 0    50   ~ 0
-GND
-Wire Wire Line
-	9500 6000 9250 6000
-Text Label 9250 6000 2    50   ~ 0
+Text Label 10000 6150 0    50   ~ 0
 GND
 Wire Wire Line
-	9500 6150 9250 6150
-Text Label 9250 6150 2    50   ~ 0
+	10000 6000 9750 6000
+Text Label 9750 6000 2    50   ~ 0
+GND
+Wire Wire Line
+	10000 6150 9750 6150
+Text Label 9750 6150 2    50   ~ 0
 GND
 Text Label 1500 5400 2    50   ~ 0
 SCL
@@ -893,4 +887,23 @@ Text Label 1500 5250 2    50   ~ 0
 SDA
 Text Label 1650 2500 2    50   ~ 0
 5V
+Wire Wire Line
+	5550 3400 6000 3400
+Text Label 4500 4500 2    50   ~ 0
+PC3
+$Comp
+L elements:Резистор_0,065Вт R?
+U 1 1 5DADFAA1
+P 6450 2800
+F 0 "R?" H 6450 2950 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 6450 2650 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт" H 6450 2800 60  0001 C CNN
+F 3 "" H 6450 2800 60  0001 C CNN
+F 4 "R101" H 6450 2800 50  0001 C CNN "УГО"
+F 5 "4,7 кОм" H 6450 2650 50  0000 C CNN "Номинал"
+	1    6450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2800 5550 2800
 $EndSCHEMATC
