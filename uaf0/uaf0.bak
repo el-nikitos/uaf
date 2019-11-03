@@ -892,10 +892,10 @@ Wire Wire Line
 Text Label 4500 4500 2    50   ~ 0
 PC3
 $Comp
-L elements:Резистор_0,065Вт R?
+L elements:Резистор_0,065Вт R29
 U 1 1 5DADFAA1
 P 6450 2800
-F 0 "R?" H 6450 2950 60  0000 C CNN
+F 0 "R29" H 6450 2950 60  0000 C CNN
 F 1 "Резистор_0,065Вт" H 6450 2650 60  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт" H 6450 2800 60  0001 C CNN
 F 3 "" H 6450 2800 60  0001 C CNN
