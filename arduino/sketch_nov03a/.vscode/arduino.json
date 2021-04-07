@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:atmega8_8int",
+    "port": "/dev/cu.wchusbserial1420",
+    "sketch": "sketch_nov03a.ino",
+    "programmer": "USBasp"
+}
